@@ -26,7 +26,7 @@ export HDF5_USE_FILE_LOCKING='FALSE'
     # which are useless now.
     rm -rf /var/lib/apt/lists/*
     # Install Pipenv.
-    pip3 install --upgrade setuptools
+    pip3 install setuptools
     pip3 install pipenv
     
 # load environment variables
@@ -53,14 +53,13 @@ apt-get install -y python3-sklearn
 
 pip3 install Pillow
 pip3 install matplotlib
-pip3 install --ignore-installed monai
 pip3 install --ignore-installed torch
 pip3 install --ignore-installed nilearn
 pip3 install tqdm
-pip3 install h5py
 pip3 install --ignore-installed pandas
 pip3 install --ignore-installed simpleitk
 pip3 install --ignore-installed comet_ml
+pip3 install --ignore-installed monai
 
 %runscript
 # executes with the singularity run command
